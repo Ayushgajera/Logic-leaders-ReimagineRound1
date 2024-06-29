@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, sans-serif;
+}
+
+footer{
+  height: 80vh;
+  width: 100vw;
+  background-image: url('./images/footerbg.png');
+  object-fit: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
