@@ -9,3 +9,13 @@ html {
   width: 100vw;
   font-family: Arial, sans-serif;
 }
+
+footer{
+  height: 80vh;
+  width: 100vw;
+  background-image: url('./images/—Pngtree—orange\ fresh\ snacks\ fries\ potato_1102989.jpg');
+  object-fit: none;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
