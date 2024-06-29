@@ -11,7 +11,7 @@ html {
 }
 
 footer{
-  height: 80vh;
+  min-height: 80vh;
   width: 100vw;
   background-image: url('./images/—Pngtree—orange\ fresh\ snacks\ fries\ potato_1102989.jpg');
   object-fit: cover;
