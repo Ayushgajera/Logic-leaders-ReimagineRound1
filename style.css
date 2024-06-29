@@ -14,8 +14,8 @@ html {
 footer{
   height: 80vh;
   width: 100vw;
-  background-image: url('./images/footerbg.png');
+  background-image: url('./images/—Pngtree—orange\ fresh\ snacks\ fries\ potato_1102989.jpg');
   object-fit: none;
-  background-size: contain;
+  background-size:cover;
   background-repeat: no-repeat;
 }
