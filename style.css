@@ -10,3 +10,12 @@ html {
   width: 100vw;
   font-family: Arial, sans-serif;
 }
+
+footer{
+  height: 80vh;
+  width: 100vw;
+  background-image: url('./images/footerbg.png');
+  object-fit: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
