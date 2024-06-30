@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body,
 html {
   height: 100vh;
@@ -12,10 +11,11 @@ html {
 }
 
 footer{
-  height: 80vh;
+  min-height: 80vh;
   width: 100vw;
   background-image: url('./images/—Pngtree—orange\ fresh\ snacks\ fries\ potato_1102989.jpg');
-  object-fit: none;
-  background-size:cover;
+  object-fit: cover;
+  background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
