@@ -10,10 +10,33 @@ html {
   font-family: Arial, sans-serif;
 }
 
-footer{
+h1 {
+    position: absolute;
+    top: 2em;
+    left: 62%;
+    width: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.container {
+    display: flex;
+    flex-shrink: 0;
+    width: 300vw;
+    height: 100vh;
+    section {
+      margin: 1.5rem 0;
+        min-width: 65%;
+        height: 100vh;
+        padding: 5rem;
+    }
+}
+
+
+
+footer {
   min-height: 80vh;
   width: 100vw;
-  background-image: url('./images/—Pngtree—orange\ fresh\ snacks\ fries\ potato_1102989.jpg');
+  background-image: url("./images/—Pngtree—orange\ fresh\ snacks\ fries\ potato_1102989.jpg");
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
