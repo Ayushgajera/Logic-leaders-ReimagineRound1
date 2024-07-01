@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body,
 html {
   height: 100vh;
@@ -10,7 +11,350 @@ html {
   font-family: Arial, sans-serif;
 }
 
-footer{
+/* ==================== product start ====================== */
+.bestSellingProduct {
+  background-color: rgb(231, 203, 147);
+  padding: 10px 0px 70px 0px;
+}
+
+.product_Tiltle {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  align-items: center;
+  border-bottom: 2px solid rgb(70, 68, 68);
+  margin: 0 4rem;
+  margin-bottom: 50px;
+}
+
+.product_Tiltle h2 {
+  font-size: 40px;
+}
+
+.product_Tiltle .filter {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product_Tiltle input {
+  width: 30%;
+  border-radius: 10px;
+}
+
+.border {
+  border: 3px solid white;
+}
+
+.productOne {
+  padding: 20px 40px;
+  border-radius: 20px;
+  height: 350px;
+  margin-top: 5rem;
+}
+
+.productOne:hover {
+  background-color: rgb(252, 174, 7);
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.productOne img {
+  width: 85%;
+  position: relative;
+  top: -130px;
+}
+
+.about_product {
+  position: relative;
+  top: -110px;
+}
+
+.productList {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.combo {
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 50px;
+  text-align: center;
+}
+
+.price {
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: 600;
+  text-align: center;
+
+}
+
+.adding {
+  color: red;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  /* margin-top: px; */
+}
+
+.adding span {
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+  font-size: 30px;
+  padding: 0 50px;
+}
+
+.btn_cart {
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 7px 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: rgba(255, 189, 20, 1);
+  margin-left: 40px;
+}
+
+.btn_cart:hover {
+  background-color: red;
+}
+
+/* =================== index page start  ======================== */
+.wapper {
+  position: relative;
+}
+
+.wapper .background {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid;
+}
+
+.chips img {
+  position: absolute;
+  bottom: 2px;
+  left: 36%;
+}
+
+.left {
+  position: absolute;
+  bottom: 50px;
+  left: 5rem;
+}
+
+.left p {
+  font-size: 36px;
+}
+
+.right {
+  position: absolute;
+  bottom: 50px;
+  right: 5rem;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.testy {
+  position: absolute;
+  top: 90px;
+  left: 30%;
+  font-size: 100px;
+  color: white;
+}
+
+.chilly {
+  position: absolute;
+  top: 70px;
+  right: 250px;
+}
+
+.chiz {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+}
+
+.navigation input {
+  background-color: black;
+  height: 30px;
+  border-radius: 10px;
+  padding: 0 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: 540;
+  border: none;
+  margin-left: 280px;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 20px;
+  color: black;
+  font-weight: bolder;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  margin-left: 250px;
+  display: flex;
+}
+
+.navigation .logo {
+  margin-left: 50px;
+}
+
+/*======================== index page end  ====================== */
+/* ==================== main image ============================= */
+.wapper {
+  position: relative;
+}
+
+.wapper .background {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid;
+}
+
+.chips img {
+  position: absolute;
+  bottom: 2px;
+  left: 36%;
+}
+
+.left {
+  position: absolute;
+  bottom: 50px;
+  left: 5rem;
+}
+
+.left p {
+  font-size: 36px;
+}
+
+.right {
+  position: absolute;
+  bottom: 50px;
+  right: 5rem;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.testy {
+  position: absolute;
+  top: 90px;
+  left: 30%;
+  font-size: 100px;
+  color: white;
+}
+
+.chilly {
+  position: absolute;
+  top: 70px;
+  right: 250px;
+}
+
+.chiz {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+}
+
+.navigation input {
+  background-color: black;
+  height: 30px;
+  border-radius: 10px;
+  padding: 0 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: 540;
+  border: none;
+  margin-left: 280px;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 20px;
+  color: black;
+  font-weight: bolder;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  margin-left: 250px;
+}
+
+.navigation .logo {
+  margin-left: 50px;
+}
+
+/* ==================== prduct end ========================== */
+/* ======================== media quary start ===================== */
+@media (max-width: 576px) {
+  .product_Tiltle h2 {
+    font-size: 28px;
+  }
+
+  .product_Tiltle .filter {
+    display: none;
+  }
+
+  .product2 {
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .productOne {
+    padding: 20px 15px;
+  }
+
+  .product_Tiltle h2 {
+    margin-left: 20px;
+  }
+
+  .product3 {
+    margin-top: 8rem;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .productOne {
+    padding: 20px 25px;
+  }
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+/* ======================== media quary end ===================== */
+footer {
   min-height: 80vh;
   width: 100vw;
   background-image: url('./images/—Pngtree—orange\ fresh\ snacks\ fries\ potato_1102989.jpg');
