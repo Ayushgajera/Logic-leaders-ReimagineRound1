@@ -38,3 +38,32 @@ sections.forEach((section) => {
     },
   });
 });
+
+function tastymonials (){
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.card');
+  
+    cards.forEach((card, index) => {
+      if (index < cards.length - 1) {
+        const nextCard = cards[index + 1];
+        const toScale = 1 - (cards.length - 1 - index) * 0.1;
+        const toBrightness = 0.6;
+        
+        ScrollTrigger.create({
+          trigger: nextCard,
+          start: "top bottom",
+          end: "top top",
+          onUpdate: (self) => {
+            const progress = self.progress;
+            card.style.transform = `scale(${1 - progress * (1 - toScale)})`;
+            card.style.filter = `brightness(${1 - progress * (1 - toBrightness)})`;
+          }
+        });
+      }
+    });
+  });
+}
+// tastymonials();
