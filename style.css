@@ -16,6 +16,14 @@ html {
     transform: translate(-50% , -50%);
 }
 
+.cursor {
+  height: 100px;
+  width: 100px;
+  background-color: #e5f0d6;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+}
 
 footer {
   min-height: 80vh;
@@ -599,7 +607,7 @@ ul {
 
 .video-contanier {
   margin-top: 1vw;
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   padding: 1vw;
   position: relative;
