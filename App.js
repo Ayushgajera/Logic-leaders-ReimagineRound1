@@ -1,32 +1,8 @@
-// Register the ScrollTrigger plugin with GSAP
+
 gsap.registerPlugin(ScrollTrigger);
 
-// Initialize Locomotive Scroll
-const locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".main-container"),
-  smooth: true
-});
-
-// Sync Locomotive Scroll with ScrollTrigger
-locoScroll.on("scroll", ScrollTrigger.update);
-
-ScrollTrigger.scrollerProxy(".main-container", {
-  scrollTop(value) {
-    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-  },
-  getBoundingClientRect() {
-    return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-  },
-  pinType: document.querySelector(".main-container").style.transform ? "transform" : "fixed"
-});
-
-// Refresh ScrollTrigger and LocomotiveScroll after setup
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-ScrollTrigger.refresh();
-
-// Define the scroll tween for horizontal sections
 const sections = gsap.utils.toArray(".container > section");
-const scrollTween = gsap.to(sections, {
+let scrollTween = gsap.to(sections, {
   xPercent: -95 * (sections.length - 1),
   ease: "none",
   scrollTrigger: {
@@ -34,8 +10,24 @@ const scrollTween = gsap.to(sections, {
     pin: true,
     scrub: 1,
     end: "+=3000",
-    scroller: ".main-container"
-  }
+  },
+});
+
+
+sections.forEach((section) => {
+  gsap.from(section.querySelector("img"), {
+    y: -150,
+    opacity: 0,
+    duration: 2,
+    ease: "elastic",
+    stagger: 1,
+    scrollTrigger: {
+      trigger: section,
+      containerAnimation: scrollTween,
+      start: "left right",
+      scrub:4,
+    },
+  });
 });
 
 
