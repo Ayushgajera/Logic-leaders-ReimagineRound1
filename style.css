@@ -11,6 +11,109 @@ html {
   font-family: Arial, sans-serif;
 }
 
+/* =================== index page start  ======================== */
+.menu_slider {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 40vh;
+  z-index: 999;
+  background-color: #f5f5dc;
+  box-shadow: -10px 0 10px rgba(0, 0, 255, 0.39);
+  backdrop-filter: blur(-14px);
+  display: none;
+  flex-direction: column;
+}
+.wapper {
+  position: relative;
+}
+.show_mb{
+  display: none;
+}
+.wapper .background {
+  width: 100%;
+  border: 1px solid;
+}
+
+.chips img {
+  position: absolute;
+  bottom: 2px;
+  left: 36%;
+  
+}
+
+.left {
+  position: absolute;
+  bottom: 50px;
+  left: 5rem;
+  font-size: 2.5rem;
+}
+.right {
+  position: absolute;
+  bottom: 50px;
+  right: 5rem;
+  font-size: 36px;
+  line-height: 60px;
+}
+.testy {
+  position: absolute;
+  top: 90px;
+  left: 30%;
+  font-size: 100px;
+  color: white;
+}
+.chilly {
+  position: absolute;
+  top: 70px;
+  right: 250px;
+}
+
+.chiz {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 90%;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+}
+
+.navigation input {
+  background-color: black;
+  /* height: 30px; */
+  border-radius: 10px;
+  padding: 0 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: 540;
+  border: none;
+  margin-left: 200px;
+}
+li a {
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 20px;
+  color: black;
+  font-weight: bolder;
+}
+
+ul li {
+  list-style: none;
+}
+ul {
+  display: flex;
+}
+
+.navigation .logo {
+  margin-left: 50px;
+}
+/*======================== index page end  ====================== */
 /* ==================== product start ====================== */
 .bestSellingProduct {
   background-color: rgb(231, 203, 147);
@@ -119,106 +222,8 @@ html {
 .btn_cart:hover {
   background-color: red;
 }
-
-/* =================== index page start  ======================== */
-.wapper {
-  position: relative;
-}
-
-.wapper .background {
-  width: 100%;
-  height: 100vh;
-  border: 1px solid;
-}
-
-.chips img {
-  position: absolute;
-  bottom: 2px;
-  left: 36%;
-}
-
-.left {
-  position: absolute;
-  bottom: 50px;
-  left: 5rem;
-}
-
-.left p {
-  font-size: 36px;
-}
-
-.right {
-  position: absolute;
-  bottom: 50px;
-  right: 5rem;
-  font-size: 36px;
-  line-height: 60px;
-}
-
-.testy {
-  position: absolute;
-  top: 90px;
-  left: 30%;
-  font-size: 100px;
-  color: white;
-}
-
-.chilly {
-  position: absolute;
-  top: 70px;
-  right: 250px;
-}
-
-.chiz {
-  position: absolute;
-  top: 100px;
-  left: 80px;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  top: 20px;
-}
-
-.navigation input {
-  background-color: black;
-  height: 30px;
-  border-radius: 10px;
-  padding: 0 5px;
-  color: white;
-  font-size: 20px;
-  font-weight: 540;
-  border: none;
-  margin-left: 280px;
-}
-
-a {
-  text-decoration: none;
-  margin-left: 25px;
-  font-size: 20px;
-  color: black;
-  font-weight: bolder;
-}
-
-ul li {
-  list-style: none;
-}
-
-ul {
-  margin-left: 250px;
-  display: flex;
-}
-
-.navigation .logo {
-  margin-left: 50px;
-}
-
-/*======================== index page end  ====================== */
 /* ==================== main image ============================= */
-.wapper {
+/* .wapper {
   position: relative;
 }
 
@@ -296,7 +301,7 @@ a {
   text-decoration: none;
   margin-left: 25px;
   font-size: 20px;
-  color: black;
+  color: rgb(255, 252, 252);
   font-weight: bolder;
 }
 
@@ -310,48 +315,203 @@ ul {
 
 .navigation .logo {
   margin-left: 50px;
-}
+} */
 
 /* ==================== prduct end ========================== */
 /* ======================== media quary start ===================== */
-@media (max-width: 576px) {
-  .product_Tiltle h2 {
-    font-size: 28px;
-  }
-
-  .product_Tiltle .filter {
-    display: none;
-  }
-
-  .product2 {
-    margin-top: 8rem;
-  }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .chips img {
+    width: 33vw;
+}
+.show_mb{
+display: flex;
+}
+.navigation .show_mb{
+  /* background-color: aqua; */
+  margin-left: 50px;
+}
+.left {
+  position: absolute;
+  bottom: 0px;
+  left: 2rem;
+  font-size: 1rem;
+  line-height: 15px;
+  font-weight: 600;
 }
 
-@media (max-width: 768px) {
-  .productOne {
-    padding: 20px 15px;
-  }
-
-  .product_Tiltle h2 {
-    margin-left: 20px;
-  }
-
-  .product3 {
-    margin-top: 8rem;
-  }
-
+.right {
+    position: absolute;
+    bottom: -9px;
+    right: 0rem;
+    font-size: 17px;
+     font-weight: 600;
+    line-height: 12px;
+}
+.navigation {
+  top: 10px;
+}
+.chiz {
+  position: absolute;
+  top: 50px;
+  left: 3px;
+}
+.chiz img{
+width: 20vw;
+}
+.hide_mobile{
+  display: none;
+}
+.navigation .logo {
+    margin-left: 7px;
+    width: 18vw;
+}
+.chilly {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+.chilly img{
+  width: 20vw;
+}
+.testy {
+  /* font-weight: 700; */
+  top: 7vw;
+  left: 29vw;
+  text-align: center;
+  font-size: 2.5rem;
+}
 }
 
-@media (min-width: 992px) {
-  .productOne {
-    padding: 20px 25px;
-  }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .chips img {
+    width: 33vw;
+}
+.testy {
+  position: absolute;
+  top: 48px;
+  left: 28%;
+  font-size: 63px;
+  color: white;
+}
+.chilly {
+  position: absolute;
+  top: 55px;
+  right: 26px;
+}
+.chilly img {
+  width: 15vw;
+}
+.right {
+  bottom: -10px;
+  right: 0rem;
+  font-size: 28px;
+  line-height: 26px;
+}
+.navigation{
+  gap: 42%;
+}
+li a{
+  margin-left: 15px;
+  font-size: 16px;
+}
+.chiz {
+  top: 79px;
+  left: 27px;
+}
+.navigation .logo {
+  margin-left: 8px;
+  width: 13vw;
+}
+.chiz img {
+width: 20vw;
+}
+.left {
+  position: absolute;
+  bottom: 17px;
+  left: 3rem;
+  line-height: 24px;
+  font-size: 1.8rem;
+}
 }
 
-@media (min-width: 1200px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navigation {
+    gap: 25vw;
+}
+.navigation .logo {
+  margin-left: 15px;
+}
+.chips img {
+  width: 35vw;;
+}
+.testy {
+  top: 27px;
+  left: 26%;
+  font-size: 10vw;
+}
+.right {
+  position: absolute;
+  bottom: -10px;
+  right: -1rem;
+  font-size: 33px;
+  line-height: 38px;
+}
+.chilly {
+  position: absolute;
+  top: 15px;
+  right: 24px;
+}
+.chiz {
+  position: absolute;
+  top: 65px;
+  left: 30px;
+}
+.left {
+  position: absolute;
+  bottom: -5px;
+  left: 3rem;
+  font-size: 2rem;
+}
+}
 
-@media (min-width: 1400px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .navigation {
+    gap: 32vw;
+}
+.right {
+  bottom: 60px;
+  right: 5rem;
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: 600;
+}
+.chips img {
+  width: 35vw;;
+}
+.left {
+  bottom: 50px;
+  line-height: 50px;
+  left: 10rem;
+  font-weight: 500;
+}
+li a{
+  font-size: 22px;
+  margin-left: 30px;
+}
+.testy {
+  top: 35px;
+}
+.chilly {
+  right: 30px;
+}
+.navigation .logo {
+  margin-left: 35px;
+}
+}
 
 /* ======================== media quary end ===================== */
 footer {
