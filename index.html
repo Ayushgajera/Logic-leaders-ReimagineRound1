@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Re-imagin - Logic Leaders</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -15,17 +18,84 @@
 
   <body>
     <div class="main-container" data-scroll-container>
+
+
+
+
+
+
+      <div class="main">
+        <nav>
+          <img
+            src="./images/logo_94adfbc0-8cc1-42c4-b3c9-37f11ff10566_145x 2.png"
+            alt=""
+          />
+          <div class="menu-icon">
+            <i class="ri-menu-line cursor-pointer md:hidden"></i>
+          </div>
+          <div class="des-menu hidden md:flex flex w-full justify-center">
+            <div class="des-menu-item flex gap-6">
+              <h2 class="text-2xl">Home</h2>
+              <h2 class="text-2xl">Shop</h2>
+              <h2 class="text-2xl">Service</h2>
+              <h2 class="text-2xl">Contact Us</h2>
+            </div>
+          </div>
+          <div class="flex hidden md:flex gap-1">
+            <input
+              type="text"
+              class="px-2 py-1 rounded-xl outline-none bg-zinc-800 text-white"
+              placeholder="Search Product "
+            />
+            <i
+              class="ri-search-line px-3 rounded-2xl py-2 bg-zinc-800 text-white cursor-pointer"
+            ></i>
+          </div>
+        </nav>
+
+        <div class="menu z-[99] hidden">
+          <div class="menu-item">
+            <h2>Home</h2>
+            <h2>Shop</h2>
+            <h2>Service</h2>
+            <h2>Contact Us</h2>
+            <div>
+              <input type="text" placeholder="Search Product " />
+              <i class="ri-search-line"></i>
+            </div>
+          </div>
+          <div class="close cursor-pointer">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div
+          class="home-page flex gap-[1.2rem] justify-center flex-wrap items-center h-[75vh]"
+        >
+          <h1 class="text-5xl md:text-9xl left">Testy</h1>
+          <img
+            class="h-[50vh] md:h-auto w-fit object-fit img scale-[0] hidden"
+            src="./images/main-img.png"
+            alt=""
+          />
+          <h1 class="text-5xl md:text-9xl right">Chips</h1>
+        </div>
+      </div>
+
+
+
+<!-- 
       <div class="w-100 h-screen firstpage ">
         
     
-          <div class="top rounded-md">
+          <div class="top ">
       
             <img class="rounded-md" src="./206496099_658190032248253_8724118647784574091_n.jpg" alt="">
             <img class="rounded-md" src="./277737330_870415827692338_4219596053157497433_n.jpg" alt="">
             <img class="rounded-md" src="./277756254_871174180949836_202989303454790175_n.jpg" alt="">
           </div>
           
-      </div>
+      </div> -->
       <!-- index page end -->
       <!-- ============================ product start ========================== -->
       <div class="wappers">
@@ -217,7 +287,7 @@
                   this product as it allows for genuinely fun snacking without
                   the guilt.
                 </p>
-                <h4 class="text-right mt-6 text-2xl font-bold">
+                <h4 class="text-right mt-6 text-2xl font-bold ">
                   ~ PRIYA VEEMBUR
                 </h4>
               </div>

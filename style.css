@@ -1,12 +1,24 @@
+@font-face {
+  font-family: potato;
+  src: url(./font/Potato-Chips\ \(1\).otf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: potato;
+  /* font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+   */
+  
 }
 
 body,
 html {
   height: 100vh;
+
   width: 100vw;
   font-family: Arial, sans-serif;
 }
@@ -59,7 +71,13 @@ footer {
   gap: 40px 0;
 }
 
-
+.card h4{
+  color: black;
+}
+.container-slider{
+  color: #ffe5b0d2;
+  background-color: #16263a;
+}
 
 
 .card__content {
@@ -707,4 +725,82 @@ ul {
     display: flex;
   align-items: center;
   object-fit: contain;
+}
+
+
+
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/main-bg.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  font-family: potato;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  
+  
+}
+.menu-icon {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background-color: #ffffff73;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu-item > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
+
+.menu-item > div > input {
+  padding: 5px 5px;
+  background-color: #dadada;
+  color: black;
+  outline: none;
+  border-radius: 10px;
+}
+
+.menu-item > div > i {
+  color: black;
+  font-size: 1.3rem;
+  background-color: #dadada;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  z-index: 11;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 4px 10px;
+}
+.menu-item > h2 {
+  margin-left: 5rem;
+  font-size: 2rem;
+  margin-top: 1rem;
 }
