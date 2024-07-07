@@ -1,333 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Re-imagin - Logic Leaders</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Re-imagin - Logic Leaders</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  <body>
+    <div class="main-container overflow-hidden" data-scroll-container>
+      <div class="main">
+        <nav>
+          <img
+            src="./images/logo_94adfbc0-8cc1-42c4-b3c9-37f11ff10566_145x 2.png"
+            alt=""
+          />
+          <div class="menu-icon">
+            <i class="ri-menu-line cursor-pointer md:hidden"></i>
+          </div>
+          <div class="des-menu hidden md:flex flex w-full justify-center">
+            <div class="des-menu-item flex gap-6">
+              <h2 class="text-2xl">Home</h2>
+              <h2 class="text-2xl">Shop</h2>
+              <h2 class="text-2xl">Service</h2>
+              <h2 class="text-2xl">Contact Us</h2>
+            </div>
+          </div>
+          <div class="flex hidden md:flex gap-1">
+            <input
+              type="text"
+              class="px-2 py-1 rounded-xl outline-none bg-zinc-800 text-white"
+              placeholder="Search Product "
+            />
+            <i
+              class="ri-search-line px-3 rounded-2xl py-2 bg-zinc-800 text-white cursor-pointer"
+            ></i>
+          </div>
+        </nav>
 
-<body>
-  <div class="main-container" data-scroll-container>
-
-
-
-
-
-
-    <div class="main">
-      <nav>
-        <img src="./images/logo_94adfbc0-8cc1-42c4-b3c9-37f11ff10566_145x 2.png" alt="" />
-        <div class="menu-icon">
-          <i class="ri-menu-line cursor-pointer md:hidden"></i>
-        </div>
-        <div class="des-menu hidden md:flex flex w-full justify-center">
-          <div class="des-menu-item flex gap-6">
-            <h2 class="text-2xl">Home</h2>
-            <h2 class="text-2xl">Shop</h2>
-            <h2 class="text-2xl">Service</h2>
-            <h2 class="text-2xl">Contact Us</h2>
+        <div class="menu z-[99] hidden">
+          <div class="menu-item">
+            <h2>Home</h2>
+            <h2>Shop</h2>
+            <h2>Service</h2>
+            <h2>Contact Us</h2>
+            <div>
+              <input type="text" placeholder="Search Product " />
+              <i class="ri-search-line"></i>
+            </div>
+          </div>
+          <div class="close cursor-pointer">
+            <i class="ri-close-line"></i>
           </div>
         </div>
-        <div class="flex hidden md:flex gap-1">
-          <input type="text" class="px-2 py-1 rounded-xl outline-none bg-zinc-800 text-white"
-            placeholder="Search Product " />
-          <i class="ri-search-line px-3 rounded-2xl py-2 bg-zinc-800 text-white cursor-pointer"></i>
-        </div>
-      </nav>
 
-      <div class="menu z-[99] hidden">
-        <div class="menu-item">
-          <h2>Home</h2>
-          <h2>Shop</h2>
-          <h2>Service</h2>
-          <h2>Contact Us</h2>
-          <div>
-            <input type="text" placeholder="Search Product " />
-            <i class="ri-search-line"></i>
-          </div>
+        <div
+          class="home-page flex md:gap-[1.2rem] justify-center flex-wrap items-center h-[75vh]"
+        >
+          <h1 class="text-8xl md:text-9xl left">Testy</h1>
+          <img
+            class="h-[40vh] -mt-20 md:m-0 md:h-[60vh] md:w-[23vw] w-fit object-fit img scale-[0] hidden"
+            src="./images/main-img.png"
+            alt="img"
+            id="slideshow"
+          />
+          <h1 class="text-8xl -mt-20 md:m-0 md:text-9xl right">Chips</h1>
         </div>
-        <div class="close cursor-pointer">
-          <i class="ri-close-line"></i>
+        <button
+          class="absolute md:bottom-20 md:end-20 end-1/2 translate-x-1/2 -mt-8 mb-5 md:translate-x-1 bg-zinc-800 text-lg md:text-lg text-white px-2 py-1 rounded-xl hover:bg-white hover:text-zinc-800 transition"
+        >
+          Explore More <i class="ri-arrow-right-line"></i>
+        </button>
+      </div>
+      <!-- ============================ product start ========================== -->
+      <div class="wappers">
+        <div class="bestSellingProduct">
+          <div class="product_Tiltle">
+            <h2>Best Selling Products</h2>
+            <p class="filter">Filter: <input type="text" /></p>
+          </div>
+          <div class="productList">
+            <div class="productOne border">
+              <img class="productImage ms-2" src="images/home-2.png" alt="" />
+              <div class="about_product">
+                <p class="combo">SNACK ATTACK COMBO</p>
+                <p class="price">RS. 10.00</p>
+                <p class="adding text-red-600">- <span>1</span> +</p>
+                <div data-tooltip="Price:-$10" class="button mt-5">
+                  <div class="button-wrapper">
+                    <div class="text">Buy Now</div>
+                    <span class="icon">
+                      <svg
+                        viewBox="0 0 16 16"
+                        class="bi bi-cart2"
+                        fill="currentColor"
+                        height="16"
+                        width="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="productOne border product4 product2">
+              <img
+                src="images/Screenshot_2024-06-16_154619-removebg-preview 16.png"
+                alt=""
+              />
+              <div class="about_product">
+                <p class="combo">SNACK ATTACK COMBO</p>
+                <p class="price">RS. 50.00</p>
+                <p class="adding">- <span>1</span> +</p>
+                <div data-tooltip="Price:-$10" class="button">
+                  <div class="button-wrapper">
+                    <div class="text">Buy Now</div>
+                    <span class="icon">
+                      <svg
+                        viewBox="0 0 16 16"
+                        class="bi bi-cart2"
+                        fill="currentColor"
+                        height="16"
+                        width="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="productOne border product2 product3">
+              <img
+                src="images/home-2.png"
+                alt=""
+              />
+              <div class="about_product">
+                <p class="combo">SNACK ATTACK COMBO</p>
+                <p class="price">RS. 25.00</p>
+                <p class="adding">- <span>1</span> +</p>
+                <div data-tooltip="Price:-$10" class="button">
+                  <div class="button-wrapper">
+                    <div class="text">Buy Now</div>
+                    <span class="icon">
+                      <svg
+                        viewBox="0 0 16 16"
+                        class="bi bi-cart2"
+                        fill="currentColor"
+                        height="16"
+                        width="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="home-page flex gap-[1.2rem] justify-center flex-wrap items-center h-[75vh]">
-        <h1 class="text-5xl md:text-9xl left ">Testy</h1>
-        <img class="h-[50vh] md:h-auto w-fit object-fit img scale-[0] hidden chips" src="./images/main-img.png"
-          alt="" />
-        <h1 class="text-5xl md:text-9xl right">Chips</h1>
+      <div class="video-contanier">
+        <h2 class="play">play</h2>
+        <video
+          class="video"
+          muted
+          autoplay
+          loop
+          src="./video/video.mp4"
+        ></video>
       </div>
-    </div>
 
+      <div class="overflow-hidden relative bg-red-300">
+        <div class="container scrollx h-[95vh] w-[300vw] items-center flex">
+          <h1
+            class="text-3xl sm:text-3xl border-b-2 border-zinc-800 top-[6rem] sm:top-[3.5rem] left-[16.5%] sm:left-[55%] absolute w-[25%] sm:w-[80%] text-center pb-3 font-semibold z-[10] opacity-60 headings"
+          >
+            "Testy Chip: Elevate Your Snacking Experience!"
+          </h1>
 
+          <img
+            class="absolute -right-[10rem] -top-5 w-[15rem]"
+            src="./images/honion.png"
+            alt=""
+          />
 
-    
-      <div class="w-100 h-screen firstpage  hidden md:block">
-        
-    
-          <div class="top ">
+          <section
+            class="min-w-[40%] md:min-w-[60%] h-[40vh] md:h-[100vh] mt-[4rem] p-[5rem] sm:pt-[7rem] sm:p-[5rem]"
+          >
+            <img
+              class="rounded-2xl h-[20rem] md:h-[90%] md:w-[95%] object-cover"
+              src="./images/hscroll1.png"
+              alt=""
+            />
+          </section>
+          <section
+            class="min-w-[40%] md:min-w-[60%] h-[40vh] md:h-[100vh] mt-[4rem] p-[4rem] sm:pt-[7rem] sm:p-[5rem]"
+          >
+            <img
+              class="rounded-2xl h-[20rem] md:h-[90%] md:w-[95%] object-cover"
+              src="./images/hscroll2.png"
+              alt=""
+            />
+          </section>
+          <section
+            class="min-w-[40%] md:min-w-[60%] h-[40vh] md:h-[100vh] mt-[4rem] p-[4rem] sm:pt-[7rem] sm:p-[5rem]"
+          >
+            <img
+              class="rounded-2xl h-[20rem] md:h-[90%] md:w-[95%] object-cover"
+              src="./images/hscroll3.png"
+              alt=""
+            />
+          </section>
+          <section
+            class="min-w-[40%] md:min-w-[60%] h-[40vh] md:h-[100vh] mt-[4rem] p-[4rem] sm:pt-[7rem] sm:p-[5rem]"
+          >
+            <img
+              class="rounded-2xl h-[20rem] md:h-[90%] md:w-[95%] object-cover"
+              src="./images/hscroll4.png"
+              alt=""
+            />
+          </section>
+        </div>
+      </div>
+      <div class="sponser">
+        <h2>We are also available on</h2>
+        <div class="img-container flex flex-wrap justify-center p-6">
+          <img class="w-36 h-20" src="./images/Zepto Logo Vector.png" alt="" />
+          <img
+            class="w-36 h-20 pt-4"
+            src="./images/Amazon Mexico Logo Vector.png"
+            alt=""
+          />
+          <img class="w-44 h-20" src="./images/Swiggy Logo Vector.png" alt="" />
+          <img class="w-44 h-28" src="./images/blinkit-seeklogo.svg" alt="" />
+          <img
+            class="w-28 h-28"
+            src="./images/Uber Eats Logo Vector.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="container-slider">
+        <h1 class="heading">#[TASTY]MONIALS</h1>
+        <div class="cards">
+          <div class="card" data-index="0">
+            <div class="card__inner">
+              <img src="./images/quots.png" alt="" class="w-10 h-10 ml-10 mt-14 p-0" />
+              <div class="card__content">
+                <img class="reviewimg" src="./images/star.png" alt="" />
+  
+                <h1 class="card__title">Kids Love it !!</h1>
+                <p class="card__description">
+                  We got a pack of 5 and both the kids and us adults loved it.
+                  Amazing product - healthy and way better than other existing
+                  chips options , and really tasty. As a young family we welcome
+                  this product as it allows for genuinely fun snacking without
+                  the guilt.
+                </p>
+                <h4 class="text-right mt-6 text-2xl font-bold ">
+                  ~ PRIYA VEEMBUR
+                </h4>
+              </div>
+            </div>
+          </div>
+  
+  
+          <div class="card" data-index="0">
+            <div class="card__inner">
+              <img src="./images/quots.png" alt="" class="w-10 h-10 ml-10 mt-14 p-0" />
+              <div class="card__content">
+                <img class="reviewimg" src="./images/star.png" alt="" />
+                <h1 class="card__title text-xl  " id="title-card">
+                  Tasty, enriched flavours, high quality and price add up to a
+                  complete package.
+                </h1>
+                <p class="card__description">
+                  I enjoyed every single bite of it. Each flavours can be
+                  differentiated. Considering the quality, the price is
+                  reasonable. Ideal for those who want a different taste from
+                  the regular ones.
+                </p>
+                <h4 class="text-right mt-6 text-2xl font-bold">
+                  ~ RIDDHI MUKHERJEE
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-index="0" id="cardd">
+            <div class="card__inner">
+              <img src="./images/quots.png" alt="" class="w-10 h-10 ml-10 mt-14 p-0" />
+              <div class="card__content">
+                <img class="reviewimg" src="./images/star.png" alt="" />
+                <h1 class="card__title">
+                  Appealing and cracking good Snack..
+                </h1>
+                <p class="card__description">
+                  From a vibrantly colourful pack stacked at the store to an appetizing wholesome snack, these chips are
+                  as good in taste as they are for our health
+                </p>
+                <h4 class="text-right mt-6 text-2xl font-bold">
+                  ~ PRIYANSHU
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-10" data-index="0">
+            <div class="card__inner flex">
+              <img src="./images/quots.png" alt="" class="w-10 h-10 ml-10 mt-14 p-0" />
+              <div class="card__content">
+                <img class="reviewimg" src="./images/star.png" alt="" />
+                <h1 class="card__title">Amazing Snack</h1>
+                <p class="card__description">
+                  Amazing taste,crisp and delicious!! <br />
+                  Loved all the flavours <br />
+                  Can finish in one sitting <br />
+                  Would definitely recommend to all!!
+                </p>
+              </div>
+              <h4 class="text-right font-bold text-2xl mb-4  self-end sm: pr-4 text-xl  self-end ">
+                ~ SUNMBUL KHAN
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
       
-            <img class="rounded-md" src="./206496099_658190032248253_8724118647784574091_n.jpg" alt="">
-            <img class="rounded-md" src="./277737330_870415827692338_4219596053157497433_n.jpg" alt="">
-            <img class="rounded-md" src="./277756254_871174180949836_202989303454790175_n.jpg" alt="">
+
+      <footer class="overflow-hidden">
+        <div
+          class="px-5 overflow-hidden md:px-0 sm:flex justify-center md:gap-8 pt-16 pb-5"
+        >
+          <div>
+            <p class="text-xl font-bold">Info</p>
+            <p class="text-xl font-bold">About Us</p>
+            <p class="text-xl font-bold">Contact Us</p>
+            <p class="text-xl font-bold">Terms and Conditions</p>
+            <p class="text-xl font-bold">Privacy Policy</p>
+            <p class="text-xl font-bold">Return and Refund Policy</p>
+            <p class="text-xl font-bold">FAQ</p>
+            <p class="text-xl font-bold">Terms and Service</p>
+            <p class="text-xl font-bold">Bulk Deal</p>
           </div>
-          
-      </div>
-    <!-- index page end -->
-    <!-- ============================ product start ========================== -->
-    <div class="wappers">
-      <div class="bestSellingProduct">
-        <div class="product_Tiltle">
-          <h2>Best Selling Products</h2>
-          <p class="filter">Filter: <input type="text" /></p>
-        </div>
-        <div class="productList">
-          <div class="productOne border">
-            <img class="productImage" src="images/Screenshot_2024-06-16_154619-removebg-preview 16.png" alt="" />
-            <div class="about_product">
-              <p class="combo">SNACK ATTACK COMBO</p>
-              <p class="price">RS. 10.00</p>
-              <p class="adding text-red-600">- <span>1</span> +</p>
-              <div data-tooltip="Price:-$10" class="button">
-                <div class="button-wrapper">
-                  <div class="text">Buy Now</div>
-                  <span class="icon">
-                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
-                      </path>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="productOne border product4 product2">
-            <img src="images/Screenshot_2024-06-16_154619-removebg-preview 16.png" alt="" />
-            <div class="about_product">
-              <p class="combo">SNACK ATTACK COMBO</p>
-              <p class="price">RS. 10.00</p>
-              <p class="adding">- <span>1</span> +</p>
-              <div data-tooltip="Price:-$10" class="button">
-                <div class="button-wrapper">
-                  <div class="text">Buy Now</div>
-                  <span class="icon">
-                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
-                      </path>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="productOne border product2 product3">
-            <img src="images/Screenshot_2024-06-16_154619-removebg-preview 16.png" alt="" />
-            <div class="about_product">
-              <p class="combo">SNACK ATTACK COMBO</p>
-              <p class="price">RS. 10.00</p>
-              <p class="adding">- <span>1</span> +</p>
-              <div data-tooltip="Price:-$10" class="button">
-                <div class="button-wrapper">
-                  <div class="text">Buy Now</div>
-                  <span class="icon">
-                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
-                      </path>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </div>
+          <div>
+            <h3 class="text-lg font-semibold my-2">Subscribe</h3>
+            <p class="text-lg font-semibold my-2">
+              Get updated with exclusive offers, latest news, and much more.
+            </p>
+            <form action="" class="flex gap-1">
+              <input
+                type="text"
+                placeholder="Enter Your Email"
+                class="outline-none rounded-md w-32 md:w-auto text-sm p-2 bg-zinc-700 text-white"
+              />
+              <button class="bg-black text-white rounded-md p-2">
+                Subscribe
+              </button>
+            </form>
+            <img
+              class="h-16 mx-5 w-fit"
+              src="./images/fachbook-insta.png"
+              alt=""
+            />
           </div>
         </div>
-      </div>
+        <div class="hidden md:flex flex-col min-h-[15rem] items-center">
+          <img class="w-[12rem]" src="./images/bee.png" alt="" />
+          <img
+            class="w-[70%] h-[19rem] absolute bottom-0"
+            src="./images/footer-potato.png"
+            alt=""
+          />
+        </div>
+      </footer>
     </div>
-
-    <div class="video-contanier">
-      <h2 class="play">play</h2>
-      <video class="video" muted autoplay loop src="./video/video.mp4"></video>
-    </div>
-
-    <div class="overflow-hidden relative bg-red-300">
-      <div class="container scrollx h-[95vh] w-[300vw] items-center flex">
-        <h1
-          class="text-3xl sm:text-3xl border-b-2 border-zinc-800 top-[6rem] sm:top-[3.5rem] left-[16.5%] sm:left-[55%] absolute w-[25%] sm:w-[80%] text-center pb-3 font-semibold z-[10] opacity-60 headings">
-          "Testy Chip: Elevate Your Snacking Experience!"
-        </h1>
-
-        <img class="absolute -right-[10rem] -top-5 w-[15rem]" src="./images/honion.png" alt="" />
-
-        <section class="min-w-[40%] md:min-w-[60%] h-[40vh] md:h-[100vh] mt-[4rem] p-[5rem] sm:pt-[7rem] sm:p-[5rem]">
-          <img class="rounded-2xl h-[20rem] md:h-[90%] md:w-[95%] object-cover" src="./images/hscroll1.png" alt="" />
-        </section>
-        <section class="min-w-[40%] md:min-w-[60%] h-[40vh] md:h-[100vh] mt-[4rem] p-[4rem] sm:pt-[7rem] sm:p-[5rem]">
-          <img class="rounded-2xl h-[20rem] md:h-[90%] md:w-[95%] object-cover" src="./images/hscroll2.png" alt="" />
-        </section>
-        <section class="min-w-[40%] md:min-w-[60%] h-[40vh] md:h-[100vh] mt-[4rem] p-[4rem] sm:pt-[7rem] sm:p-[5rem]">
-          <img class="rounded-2xl h-[20rem] md:h-[90%] md:w-[95%] object-cover" src="./images/hscroll3.png" alt="" />
-        </section>
-        <section class="min-w-[40%] md:min-w-[60%] h-[40vh] md:h-[100vh] mt-[4rem] p-[4rem] sm:pt-[7rem] sm:p-[5rem]">
-          <img class="rounded-2xl h-[20rem] md:h-[90%] md:w-[95%] object-cover" src="./images/hscroll4.png" alt="" />
-        </section>
-      </div>
-    </div>
-    <div class="sponser">
-      <h2>We are also available on</h2>
-      <div class="img-container flex flex-wrap  justify-center p-6">
-        <img class="w-36 h-20 " src="./images/Zepto Logo Vector.png" alt="">
-        <img class="w-36 h-20 pt-4" src="./images/Amazon Mexico Logo Vector.png" alt="">
-        <img class="w-44 h-20" src="./images/Swiggy Logo Vector.png" alt="">
-        <img class="w-44 h-28" src="./images/blinkit-seeklogo.svg" alt="">
-        <img class="w-28 h-28" src="./images/Uber Eats Logo Vector.png" alt="">
-      </div>
-    </div>
-    <div class="container-slider">
-      <h1 class="heading">#[TASTY]MONIALS</h1>
-      <div class="cards">
-        <div class="card" data-index="0">
-          <div class="card__inner">
-            <img src="./images/quots.png" alt="" class="w-10 h-10 ml-10 mt-14 p-0" />
-            <div class="card__content">
-              <img class="reviewimg" src="./images/star.png" alt="" />
-
-              <h1 class="card__title">Kids Love it !!</h1>
-              <p class="card__description">
-                We got a pack of 5 and both the kids and us adults loved it.
-                Amazing product - healthy and way better than other existing
-                chips options , and really tasty. As a young family we welcome
-                this product as it allows for genuinely fun snacking without
-                the guilt.
-              </p>
-              <h4 class="text-right mt-6 text-2xl font-bold ">
-                ~ PRIYA VEEMBUR
-              </h4>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="card" data-index="0">
-          <div class="card__inner">
-            <img src="./images/quots.png" alt="" class="w-10 h-10 ml-10 mt-14 p-0" />
-            <div class="card__content">
-              <img class="reviewimg" src="./images/star.png" alt="" />
-              <h1 class="card__title text-xl  " id="title-card">
-                Tasty, enriched flavours, high quality and price add up to a
-                complete package.
-              </h1>
-              <p class="card__description">
-                I enjoyed every single bite of it. Each flavours can be
-                differentiated. Considering the quality, the price is
-                reasonable. Ideal for those who want a different taste from
-                the regular ones.
-              </p>
-              <h4 class="text-right mt-6 text-2xl font-bold">
-                ~ RIDDHI MUKHERJEE
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div class="card" data-index="0" id="cardd">
-          <div class="card__inner">
-            <img src="./images/quots.png" alt="" class="w-10 h-10 ml-10 mt-14 p-0" />
-            <div class="card__content">
-              <img class="reviewimg" src="./images/star.png" alt="" />
-              <h1 class="card__title">
-                Appealing and cracking good Snack..
-              </h1>
-              <p class="card__description">
-                From a vibrantly colourful pack stacked at the store to an appetizing wholesome snack, these chips are
-                as good in taste as they are for our health
-              </p>
-              <h4 class="text-right mt-6 text-2xl font-bold">
-                ~ PRIYANSHU
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-10" data-index="0">
-          <div class="card__inner flex">
-            <img src="./images/quots.png" alt="" class="w-10 h-10 ml-10 mt-14 p-0" />
-            <div class="card__content">
-              <img class="reviewimg" src="./images/star.png" alt="" />
-              <h1 class="card__title">Amazing Snack</h1>
-              <p class="card__description">
-                Amazing taste,crisp and delicious!! <br />
-                Loved all the flavours <br />
-                Can finish in one sitting <br />
-                Would definitely recommend to all!!
-              </p>
-            </div>
-            <h4 class="text-right font-bold text-2xl mb-4  self-end sm: pr-4 text-xl  self-end ">
-              ~ SUNMBUL KHAN
-            </h4>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="overflow-hidden">
-      <div class="px-5 overflow-hidden md:px-0 sm:flex justify-center md:gap-8 pt-16 pb-5">
-        <div>
-          <p class="text-xl font-bold">Info</p>
-          <p class="text-xl font-bold">About Us</p>
-          <p class="text-xl font-bold">Contact Us</p>
-          <p class="text-xl font-bold">Terms and Conditions</p>
-          <p class="text-xl font-bold">Privacy Policy</p>
-          <p class="text-xl font-bold">Return and Refund Policy</p>
-          <p class="text-xl font-bold">FAQ</p>
-          <p class="text-xl font-bold">Terms and Service</p>
-          <p class="text-xl font-bold">Bulk Deal</p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold my-2">Subscribe</h3>
-          <p class="text-lg font-semibold my-2">
-            Get updated with exclusive offers, latest news, and much more.
-          </p>
-          <form action="" class="flex gap-1">
-            <input type="text" placeholder="Enter Your Email"
-              class="outline-none rounded-md w-32 md:w-auto text-sm p-2 bg-zinc-700 text-white" />
-            <button class="bg-black text-white rounded-md p-2">
-              Subscribe
-            </button>
-          </form>
-          <img class="h-16 mx-5 w-fit" src="./images/fachbook-insta.png" alt="" />
-        </div>
-      </div>
-      <div class="hidden md:flex flex-col min-h-[15rem] items-center">
-        <img class="w-[12rem]" src="./images/bee.png" alt="" />
-        <img class="w-[70%] h-[19rem] absolute bottom-0" src="./images/footer-potato.png" alt="" />
-      </div>
-    </footer>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-  <!-- Scroll Trigger is needed for Scroll Effects -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-  <!-- Three.js is needed for 3d Effects -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-
-  <!-- ControlKit is needed for Debug Panel -->
-  <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
-  <script src="App.js"></script>
-</body>
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="App.js"></script>
+  </body>
 </html>
