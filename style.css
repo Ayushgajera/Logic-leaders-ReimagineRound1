@@ -584,3 +584,50 @@ footer {
 .des-menu-item:hover{
 color:#f6c292
 }
+
+
+@media (max-width: 600px) {
+
+  
+  .card__inner {
+    flex-direction: column;
+  }
+
+  .card__image-container {
+    width: 100%;
+  }
+
+  .card__image {
+    aspect-ratio: 16 / 9;
+  }
+
+  .card__title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .card__description {
+    font-size: 16px;
+  }
+
+  .card__content {
+    padding: 30px 20px;
+  }
+
+  .reviewimg {
+    width: 40vw;
+    height: 15vw;
+    margin-right: 10rem;
+  }
+  .card__inner h4{
+  
+    padding-left: 0rem;
+  }
+  #title-card{
+    font-size: 25px;
+  }
+  .heading{
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+}
