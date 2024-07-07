@@ -579,3 +579,8 @@ footer {
   top: 0;
   font-size: 3rem;
 }
+
+
+.des-menu-item:hover{
+color:#f6c292
+}
