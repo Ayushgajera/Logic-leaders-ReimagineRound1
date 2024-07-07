@@ -43,7 +43,7 @@ function tastymonials (){
       if (index < cards.length - 1) {
         const nextCard = cards[index + 1];
         const toScale = 1 - (cards.length - 1 - index) * 0.1;
-        const toBrightness = 0.6;
+        const toBrightness = 0.2;
 
         ScrollTrigger.create({
           trigger: nextCard,
@@ -76,7 +76,11 @@ function colorChange(){
   });
   
   tl.to(".bestSellingProduct", {
-    backgroundColor: "#ffd788",
+    backgroundColor: "#f2c49b",
+    duration: 1
+  });
+  tl.to(".video-contanier", {
+    backgroundColor: "#f2c49b",
     duration: 1
   });
 }
@@ -99,7 +103,7 @@ function video() {
     opacity: 0,
     // y: 50,
     scale:0.6,
-    start:"-80% -80%",
+    start:"0% 100%",
     ease: "expo",
     end:"bottom bottom",
     scrollTrigger: {
@@ -191,3 +195,4 @@ tastymonials();
 colorChange();  
 sheryjs();
 video();
+
