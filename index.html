@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Re-imagin - Logic Leaders</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -14,8 +15,16 @@
 
   <body>
     <div class="main-container" data-scroll-container>
-      <div class="w-100 h-screen firstpage bg-white">
-        sd
+      <div class="w-100 h-screen firstpage ">
+        
+    
+          <div class="top rounded-md">
+      
+            <img class="rounded-md" src="./206496099_658190032248253_8724118647784574091_n.jpg" alt="">
+            <img class="rounded-md" src="./277737330_870415827692338_4219596053157497433_n.jpg" alt="">
+            <img class="rounded-md" src="./277756254_871174180949836_202989303454790175_n.jpg" alt="">
+          </div>
+          
       </div>
       <!-- index page end -->
       <!-- ============================ product start ========================== -->
@@ -122,7 +131,7 @@
 
       <div class="video-contanier">
         <h2 class="play">play</h2>
-        <video muted autoplay loop src="./video/video.mp4"></video>
+        <video class="video" muted autoplay loop src="./video/video.mp4"></video>
       </div>
      
       <div class="overflow-hidden relative bg-red-300">
@@ -334,19 +343,19 @@
         </div>
       </footer>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script> -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="App.js"></script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- Scroll Trigger is needed for Scroll Effects -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Three.js is needed for 3d Effects -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+  <!-- ControlKit is needed for Debug Panel -->
+  <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
+  <script src="App.js"></script>
   </body>
 </html>
