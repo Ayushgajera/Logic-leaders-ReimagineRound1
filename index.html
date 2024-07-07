@@ -64,18 +64,19 @@
         </div>
 
         <div
-          class="home-page flex gap-[1.2rem] justify-center flex-wrap items-center h-[75vh]"
+          class="home-page flex md:gap-[1.2rem] justify-center flex-wrap items-center h-[75vh]"
         >
-          <h1 class="text-5xl md:text-9xl left">Testy</h1>
+          <h1 class="text-8xl md:text-9xl left">Testy</h1>
           <img
-            class="h-[50vh] md:h-auto w-fit object-fit img scale-[0] hidden"
+            class="h-[40vh] -mt-20 md:m-0 md:h-[60vh] md:w-[23vw] w-fit object-fit img scale-[0] hidden"
             src="./images/main-img.png"
-            alt=""
+            alt="img"
+            id="slideshow"
           />
-          <h1 class="text-5xl md:text-9xl right">Chips</h1>
+          <h1 class="text-8xl -mt-20 md:m-0 md:text-9xl right">Chips</h1>
         </div>
         <button
-          class="absolute md:bottom-20 md:end-20 end-1/2 translate-x-1/2 mt-1 mb-5 md:translate-x-1 bg-zinc-800 text-sm md:text-lg text-white px-2 py-1 rounded-xl"
+          class="absolute md:bottom-20 md:end-20 end-1/2 translate-x-1/2 -mt-8 mb-5 md:translate-x-1 bg-zinc-800 text-lg md:text-lg text-white px-2 py-1 rounded-xl hover:bg-white hover:text-zinc-800 transition"
         >
           Explore More <i class="ri-arrow-right-line"></i>
         </button>
@@ -89,16 +90,12 @@
           </div>
           <div class="productList">
             <div class="productOne border">
-              <img
-                class="productImage"
-                src="images/Screenshot_2024-06-16_154619-removebg-preview 16.png"
-                alt=""
-              />
+              <img class="productImage ms-2" src="images/home-2.png" alt="" />
               <div class="about_product">
                 <p class="combo">SNACK ATTACK COMBO</p>
                 <p class="price">RS. 10.00</p>
                 <p class="adding text-red-600">- <span>1</span> +</p>
-                <div data-tooltip="Price:-$10" class="button">
+                <div data-tooltip="Price:-$10" class="button mt-5">
                   <div class="button-wrapper">
                     <div class="text">Buy Now</div>
                     <span class="icon">
@@ -126,7 +123,7 @@
               />
               <div class="about_product">
                 <p class="combo">SNACK ATTACK COMBO</p>
-                <p class="price">RS. 10.00</p>
+                <p class="price">RS. 50.00</p>
                 <p class="adding">- <span>1</span> +</p>
                 <div data-tooltip="Price:-$10" class="button">
                   <div class="button-wrapper">
@@ -151,12 +148,12 @@
             </div>
             <div class="productOne border product2 product3">
               <img
-                src="images/Screenshot_2024-06-16_154619-removebg-preview 16.png"
+                src="images/home-2.png"
                 alt=""
               />
               <div class="about_product">
                 <p class="combo">SNACK ATTACK COMBO</p>
-                <p class="price">RS. 10.00</p>
+                <p class="price">RS. 25.00</p>
                 <p class="adding">- <span>1</span> +</p>
                 <div data-tooltip="Price:-$10" class="button">
                   <div class="button-wrapper">
@@ -264,104 +261,9 @@
           />
         </div>
       </div>
-      <div class="container-slider">
-        <h1 class="heading">#[TASTY]MONIALS</h1>
-        <div class="cards">
-          <div class="card" data-index="0">
-            <div class="card__inner">
-              <img
-                src="./images/quots.png"
-                alt=""
-                class="w-10 h-10 ml-10 mt-14 p-0"
-              />
-              <div class="card__content">
-                <img class="reviewimg" src="./images/star.png" alt="" />
 
-                <h1 class="card__title">Kids Love it !!</h1>
-                <p class="card__description">
-                  We got a pack of 5 and both the kids and us adults loved it.
-                  Amazing product - healthy and way better than other existing
-                  chips options , and really tasty. As a young family we welcome
-                  this product as it allows for genuinely fun snacking without
-                  the guilt.
-                </p>
-                <h4 class="text-right mt-6 text-2xl font-bold">
-                  ~ PRIYA VEEMBUR
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="card" data-index="0">
-            <div class="card__inner">
-              <img
-                src="./images/quots.png"
-                alt=""
-                class="w-10 h-10 ml-10 mt-14 p-0"
-              />
-              <div class="card__content">
-                <img class="reviewimg" src="./images/star.png" alt="" />
-                <h1 class="card__title text-3xl" id="title-card">
-                  Tasty, enriched flavours, high quality and price add up to a
-                  complete package.
-                </h1>
-                <p class="card__description">
-                  I enjoyed every single bite of it. Each flavours can be
-                  differentiated. Considering the quality, the price is
-                  reasonable. Ideal for those who want a different taste from
-                  the regular ones.
-                </p>
-                <h4 class="text-right mt-6 text-2xl font-bold">
-                  ~ RIDDHI MUKHERJEE
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="card" data-index="0" id="cardd">
-            <div class="card__inner">
-              <img
-                src="./images/quots.png"
-                alt=""
-                class="w-10 h-10 ml-10 mt-14 p-0"
-              />
-              <div class="card__content">
-                <img class="reviewimg" src="./images/star.png" alt="" />
-                <h1 class="card__title">Appealing and cracking good Snack..</h1>
-                <p class="card__description">
-                  From a vibrantly colourful pack stacked at the store to an
-                  appetizing wholesome snack, these chips are as good in taste
-                  as they are for our health
-                </p>
-                <h4 class="text-right mt-6 text-2xl font-bold">~ PRIYANSHU</h4>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-10" data-index="0">
-            <div class="card__inner flex">
-              <img
-                src="./images/quots.png"
-                alt=""
-                class="w-10 h-10 ml-10 mt-14 p-0"
-              />
-              <div class="card__content">
-                <img class="reviewimg" src="./images/star.png" alt="" />
-                <h1 class="card__title">Amazing Snack</h1>
-                <p class="card__description">
-                  Amazing taste,crisp and delicious!! <br />
-                  Loved all the flavours <br />
-                  Can finish in one sitting <br />
-                  Would definitely recommend to all!!
-                </p>
-              </div>
-              <h4
-                class="text-right font-bold text-2xl mb-4 self-end sm: pr-4 text-xl self-end"
-              >
-                ~ SUNMBUL KHAN
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
+      
+      
 
       <footer class="overflow-hidden">
         <div
